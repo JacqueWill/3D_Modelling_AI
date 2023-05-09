@@ -1,0 +1,12 @@
+import numpy as np
+from sklearn.decomposition import PCA
+
+# Load 3D pose data
+poses = np.load('poses.npy')
+
+# Perform PCA on the 3D pose data
+pca = PCA(n_components=3)
+scenario_vectors = pca.fit_transform(poses)
+
+# Save the scenario vectors to a file
+np.save('scenario_vectors.npy', scenario_vectors)
