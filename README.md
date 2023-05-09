@@ -13,6 +13,7 @@ To install the required dependencies, run the following commands:
 ```
 pip install nltk
 pip install torch
+pip install transformers
 ```
 You will also need to download additional resources for the nltk library. Run the following command to open the nltk downloader, and then select and download the resources:
 
